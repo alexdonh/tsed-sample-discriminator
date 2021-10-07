@@ -3,9 +3,10 @@ import { MongooseModel } from "@tsed/mongoose";
 import { PostModel } from "src/models/PostModel";
 import { VideoPostModel } from "src/models/VideoPostModel";
 
-@Injectable({
-  deps: [PostModel]
-})
+// @Injectable({
+//   deps: [PostModel]
+// })
+@Injectable()
 export class VideoPostRepository {
   @Inject(VideoPostModel) private model: MongooseModel<VideoPostModel>;
 
