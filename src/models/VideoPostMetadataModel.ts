@@ -3,7 +3,7 @@ import { Ignore, Required } from "@tsed/schema";
 import { PostMetadataModel } from "./PostMetadataModel";
 import { VideoPostModel } from "./VideoPostModel";
 
-@Model({ discriminatorValue: "video-metadata" })
+@Model({ discriminatorValue: "video" })
 export class VideoPostMetadataModel extends PostMetadataModel {
   @Required()
   quality: string;

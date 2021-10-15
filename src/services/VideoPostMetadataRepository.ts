@@ -4,10 +4,9 @@ import { PostMetadataModel } from "src/models/PostMetadataModel";
 import { PostModel } from "src/models/PostModel";
 import { VideoPostMetadataModel } from "src/models/VideoPostMetadataModel";
 
-// @Injectable({
-//   deps: [PostMetadataModel]
-// })
-@Injectable()
+@Injectable({
+  // deps: [PostMetadataModel]
+})
 export class VideoPostMetadataRepository {
   @Inject(VideoPostMetadataModel) private model: MongooseModel<VideoPostMetadataModel>;
 
